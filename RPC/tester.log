@@ -1,0 +1,294 @@
+Running main() from googletest/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 15 tests from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m15 tests from BasicTest
+[0;32m[ RUN      ] [mBasicTest.BoolTest
+[0;32m[       OK ] [mBasicTest.BoolTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.FloatTest
+[0;32m[       OK ] [mBasicTest.FloatTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.DoubleTest
+[0;32m[       OK ] [mBasicTest.DoubleTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.CharTest
+[0;32m[       OK ] [mBasicTest.CharTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.UCharTest
+[0;32m[       OK ] [mBasicTest.UCharTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.ShortTest
+[0;32m[       OK ] [mBasicTest.ShortTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.UShortTest
+[0;32m[       OK ] [mBasicTest.UShortTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.IntTest
+[0;32m[       OK ] [mBasicTest.IntTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.UIntTest
+[0;32m[       OK ] [mBasicTest.UIntTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.LongTest
+[0;32m[       OK ] [mBasicTest.LongTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.ULongTest
+[0;32m[       OK ] [mBasicTest.ULongTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.LongLongTest
+[0;32m[       OK ] [mBasicTest.LongLongTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.ULongLongTest
+[0;32m[       OK ] [mBasicTest.ULongLongTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.StringTest
+[0;32m[       OK ] [mBasicTest.StringTest (0 ms)
+[0;32m[ RUN      ] [mBasicTest.EmptyStringTest
+[0;32m[       OK ] [mBasicTest.EmptyStringTest (0 ms)
+[0;32m[----------] [m15 tests from BasicTest (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m15 tests from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m15 tests.
+Running main() from googletest/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 9 tests from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m9 tests from ProtocolTest
+[0;32m[ RUN      ] [mProtocolTest.UnalignedTest
+[0;32m[       OK ] [mProtocolTest.UnalignedTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.LongTest
+[0;32m[       OK ] [mProtocolTest.LongTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.CharTest
+[0;32m[       OK ] [mProtocolTest.CharTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.ShortTest
+[0;32m[       OK ] [mProtocolTest.ShortTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.UIntTest
+[0;32m[       OK ] [mProtocolTest.UIntTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.StringTest
+[0;32m[       OK ] [mProtocolTest.StringTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.EmptyStringTest
+[0;32m[       OK ] [mProtocolTest.EmptyStringTest (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.BigTestA
+[0;32m[       OK ] [mProtocolTest.BigTestA (0 ms)
+[0;32m[ RUN      ] [mProtocolTest.BigTestB
+[0;32m[       OK ] [mProtocolTest.BigTestB (0 ms)
+[0;32m[----------] [m9 tests from ProtocolTest (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m9 tests from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m9 tests.
+Running main() from googletest/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 4 tests from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m4 tests from ComplexServiceTest
+[0;32m[ RUN      ] [mComplexServiceTest.TestInitialize
+Client send call to instance 100 func 0
+Server got new connection from 0.0.0.0
+Server invoking instance 100 procedure 0
+Server procedure consumes 40 bytes generates 24 bytes
+Client received a result of 24 bytes
+Client receives replied requests 1/1
+Client send call to instance 100 func 1
+Server invoking instance 100 procedure 1
+Server procedure consumes 40 bytes generates 25 bytes
+Client received a result of 25 bytes
+Client receives replied requests 1/1
+Server closes connection 0x7f71f4000b20 6
+[0;32m[       OK ] [mComplexServiceTest.TestInitialize (100 ms)
+[0;32m[ RUN      ] [mComplexServiceTest.TestString
+Client send call to instance 100 func 2
+Client send call to instance 100 func 3
+Server got new connection from 0.0.0.0
+Server invoking instance 100 procedure 2
+Server procedure consumes 44 bytes generates 31 bytes
+Server invoking instance 100 procedure 3
+Server procedure consumes 51 bytes generates 58 bytes
+Client received a result of 31 bytes
+Client receives replied requests 1/2
+Client received a result of 58 bytes
+Client receives replied requests 2/2
+Server closes connection 0x7f71f4000b80 6
+[0;32m[       OK ] [mComplexServiceTest.TestString (100 ms)
+[0;32m[ RUN      ] [mComplexServiceTest.TestIntegerSigns
+Client send call to instance 100 func 4
+Server got new connection from 0.0.0.0
+Server invoking instance 100 procedure 4
+Server procedure consumes 48 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Server closes connection 0x7f71f4000cf0 6
+[0;32m[       OK ] [mComplexServiceTest.TestIntegerSigns (100 ms)
+[0;32m[ RUN      ] [mComplexServiceTest.TestKVStore
+Client send call to instance 100 func 6
+Client send call to instance 100 func 5
+Client send call to instance 100 func 6
+Client send call to instance 100 func 6
+Server got new connection from 0.0.0.0
+Server invoking instance 100 procedure 6
+Server procedure consumes 45 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/4
+Server invoking instance 100 procedure 5
+Server procedure consumes 53 bytes generates 24 bytes
+Client received a result of 24 bytes
+Client receives replied requests 2/4
+Server invoking instance 100 procedure 6
+Server procedure consumes 45 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 3/4
+Server invoking instance 100 procedure 6
+Server procedure consumes 51 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 4/4
+Server closes connection 0x7f71f4000e60 6
+[0;32m[       OK ] [mComplexServiceTest.TestKVStore (100 ms)
+[0;32m[----------] [m4 tests from ComplexServiceTest (401 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m4 tests from 1 test suite ran. (401 ms total)
+[0;32m[  PASSED  ] [m4 tests.
+Running main() from googletest/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 3 tests from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m3 tests from SimpleServiceTest
+[0;32m[ RUN      ] [mSimpleServiceTest.TestOneCall
+Client send call to instance 123 func 0
+Server got new connection from 0.0.0.0
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/1
+Server closes connection 0x7ff3b0000b20 6
+[0;32m[       OK ] [mSimpleServiceTest.TestOneCall (0 ms)
+[0;32m[ RUN      ] [mSimpleServiceTest.TestPipelineCalls
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Server got new connection from 0.0.0.0
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Client send call to instance 123 func 0
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 2/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 3/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 4/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 5/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 6/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 7/8
+Server invoking instance 123 procedure 0
+Server procedure consumes 44 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 8/8
+Server closes connection 0x7ff3b0000b80 6
+[0;32m[       OK ] [mSimpleServiceTest.TestPipelineCalls (101 ms)
+[0;32m[ RUN      ] [mSimpleServiceTest.TestConcurrentCalls
+4000 requests done in 16 ms, thru 250000 req/s
+[0;32m[       OK ] [mSimpleServiceTest.TestConcurrentCalls (98 ms)
+[0;32m[----------] [m3 tests from SimpleServiceTest (199 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m3 tests from 1 test suite ran. (199 ms total)
+[0;32m[  PASSED  ] [m3 tests.
+Running main() from googletest/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from RandomTest
+[0;32m[ RUN      ] [mRandomTest.RandomGeneratedCode
+Client send call to instance 30082 func 0
+Server got new connection from 127.0.0.1
+Server invoking instance 30082 procedure 0
+Server procedure consumes 187 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 1
+Server invoking instance 30082 procedure 1
+Server procedure consumes 122 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 2
+Server invoking instance 30082 procedure 2
+Server procedure consumes 460 bytes generates 45 bytes
+Client received a result of 45 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 3
+Server invoking instance 30082 procedure 3
+Server procedure consumes 68 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 4
+Server invoking instance 30082 procedure 4
+Server procedure consumes 280 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 5
+Server invoking instance 30082 procedure 5
+Server procedure consumes 306 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 6
+Server invoking instance 30082 procedure 6
+Server procedure consumes 334 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 7
+Server invoking instance 30082 procedure 7
+Server procedure consumes 59 bytes generates 55 bytes
+Client received a result of 55 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 8
+Server invoking instance 30082 procedure 8
+Server procedure consumes 213 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 9
+Server invoking instance 30082 procedure 9
+Server procedure consumes 40 bytes generates 28 bytes
+Client received a result of 28 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 10
+Server invoking instance 30082 procedure 10
+Server procedure consumes 241 bytes generates 44 bytes
+Client received a result of 44 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 11
+Server invoking instance 30082 procedure 11
+Server procedure consumes 162 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 12
+Server invoking instance 30082 procedure 12
+Server procedure consumes 525 bytes generates 32 bytes
+Client received a result of 32 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 13
+Server invoking instance 30082 procedure 13
+Server procedure consumes 445 bytes generates 42 bytes
+Client received a result of 42 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 14
+Server invoking instance 30082 procedure 14
+Server procedure consumes 368 bytes generates 36 bytes
+Client received a result of 36 bytes
+Client receives replied requests 1/1
+Client send call to instance 30082 func 15
+Server invoking instance 30082 procedure 15
+Server procedure consumes 236 bytes generates 40 bytes
+Client received a result of 40 bytes
+Client receives replied requests 1/1
+Server closes connection 0x7f22b0000b20 6
+[0;32m[       OK ] [mRandomTest.RandomGeneratedCode (3307 ms)
+[0;32m[----------] [m1 test from RandomTest (3307 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (3307 ms total)
+[0;32m[  PASSED  ] [m1 test.

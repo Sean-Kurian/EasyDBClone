@@ -1,0 +1,142 @@
+{
+  "tests": 15,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2020-12-17T01:46:28Z",
+  "time": "0s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "BasicTest",
+      "tests": 15,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2020-12-17T01:46:28Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "BoolTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "FloatTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "DoubleTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "CharTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "UCharTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "ShortTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "UShortTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "IntTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "UIntTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "LongTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "ULongTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "LongLongTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "ULongLongTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "StringTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        },
+        {
+          "name": "EmptyStringTest",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:28Z",
+          "time": "0s",
+          "classname": "BasicTest"
+        }
+      ]
+    }
+  ]
+}

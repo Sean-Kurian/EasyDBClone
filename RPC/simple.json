@@ -1,0 +1,46 @@
+{
+  "tests": 3,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2020-12-17T01:46:30Z",
+  "time": "0.199s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "SimpleServiceTest",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2020-12-17T01:46:30Z",
+      "time": "0.199s",
+      "testsuite": [
+        {
+          "name": "TestOneCall",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:30Z",
+          "time": "0s",
+          "classname": "SimpleServiceTest"
+        },
+        {
+          "name": "TestPipelineCalls",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:30Z",
+          "time": "0.101s",
+          "classname": "SimpleServiceTest"
+        },
+        {
+          "name": "TestConcurrentCalls",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2020-12-17T01:46:30Z",
+          "time": "0.098s",
+          "classname": "SimpleServiceTest"
+        }
+      ]
+    }
+  ]
+}
