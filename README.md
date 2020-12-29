@@ -1,2 +1,2 @@
 # EasyDBClone
-Concurrent Database.
+A concurrent database allowing for storage and retrieval of all basic data types. Utilizes Multithreading, Polymorphism and C++ Variadic Templates. There are 4 layers to this: a database driver, an ORM Layer to interface the database, a rust server to handle mutithreaded usage, and an RPC Framework to obtain service from a program located in another computer on a network without having to understand the network's details. It borrows heavily off the architecture of EasyDB. 
