@@ -1,0 +1,121 @@
+Overriding static starter source code:
+asst2/main.py
+asst2/Makefile
+asst2/schema.py
+asst2/orm/__init__.py
+ln -s ../../asst1/easydb orm/easydb
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-01-orm.py 
+orm test
+Case 1: Default type mismatch
+Case 2: Choice type mismatch
+Case 3: Default value not in choices
+Case 4: Illegal field name
+Case 5: Field with reserved name 'pk'
+Case 6: Field with reserved name 'save'
+Case 7: Table with duplicate definition
+Case 8: Allowed by ORM but disallowed by EasyDB
+Case 9: Legal Schema (setup and export)
+Mark for orm test is 15 out of 15
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-02-object.py 
+object test
+Case 1: Missing required argument
+Case 2: Checking field value (firstName)
+Case 3: Checking field value after another new object
+Case 4: Checking field value of first (lastName)
+Case 5: Checking field value of second (height)
+Case 6: Checking field value of foreign object (age)
+Case 7: Checking field value of default (type)
+Case 8: Checking field value of default (balance)
+Case 9: Set float to Integer field
+Case 10: Set integer to Float field (allowed)
+Case 11: Set illegal value to choice field
+Case 12: Set integer to Foreign field
+Case 13: New object with None foreign key
+Mark for object test is 17 out of 17
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-03-save.py 
+save test
+Case 1: Basic save
+Case 2: Cascade save
+Case 3: Update and save
+Case 4: Transaction Abort
+Case 5: Non-atomic Update
+Case 6: Saving object without saving referenced object
+Case 7: Invalid Reference
+Mark for save test is 13 out of 13
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-04-delete.py 
+delete test
+Case 1: Basic delete
+Case 2: Deleting same object twice
+Case 3: Deleting alias object
+Mark for delete test is 6 out of 6
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-05-get.py 
+get test
+Case 1: Object does not exist
+Case 2: Get User x3
+Case 3: Cascade Get Account x2
+Mark for get test is 8 out of 8
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-06-filter.py 
+filter test
+Case 1: Get All
+Case 2: Equal operator
+Case 3: Not equal operator
+Case 4: Greater than operator
+Case 5: Equal operator (with foreign key object)
+Mark for filter test is 15 out of 15
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-07-count.py 
+count test
+Case 1: Count all
+Case 2: Less than operator
+Case 3: Not equal operator (id field)
+Case 4: Equal operator (id field, nonexistent)
+Case 5: Greater than operator (id field)
+Case 6: Equal operator (foreign not in database)
+Case 7: Unknown operator
+Case 8: Unknown field
+Mark for count test is 8 out of 8
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab2-08-custom.py 
+custom test
+Case 1: New object with Coordinate field
+Case 2: New object with default coordinate
+Case 3: Set coordinate field with int
+Case 4: Set coordinate field with bad longitude
+Case 5: Save object with valid coordinate and get()
+Case 6: Filter on location field
+Case 7: New object with Datetime field
+Case 8: New object with default Datetime fields
+Case 9: Set datetime field with int
+Case 10: Set datetime field with correct datetime
+Case 11: Save objects with valid datetime and filter/count
+Case 11: FAIL. No exception is expected. Got InvalidReference.
+> "reference is not valid"
+Case 11: FAIL. No exception is expected. Got AttributeError.
+> "'NoneType' object has no attribute 'start'"
+Case 11: FAIL. No exception is expected. Got InvalidReference.
+> "reference is not valid"
+Case 11: FAIL. No exception is expected. Got PacketError.
+> "value is wrong type non-foreign"
+Case 11: FAIL. No exception is expected. Got TypeError.
+> "'NoneType' object is not iterable"
+Case 11: FAIL. No exception is expected. Got PacketError.
+> "value is wrong type non-foreign"
+Case 11: FAIL. No exception is expected. Got TypeError.
+> "'NoneType' object is not iterable"
+Case 11: FAIL. count() did not return the right value
+Mark for custom test is 14 out of 18
+FAIL
+
+You have received 96 marks out of a total of 100 marks.

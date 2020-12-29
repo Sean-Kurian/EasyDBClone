@@ -1,0 +1,78 @@
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-01-insert.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:8864, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-02-update.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:5796, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-03-drop.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:4900, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-04-scan.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:3142, fd: 3 }
+HIE
+row ids: [3]
+HIE
+row ids: [3, 5]
+HIE
+row ids: [3, 5, 1]
+HIE
+row ids: [3, 5, 1, 2]
+HIE
+row ids: [3, 5, 1, 2, 4]
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-05-stress.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:7548, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-06-parallel.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:2918, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:2218, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:5793, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:7085, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:7678, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:2064, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:1787, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-08-limit.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:7208, fd: 3 }
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-09-synch.py --------
+
+Listening: TcpListener { addr: 127.0.0.1:2336, fd: 3 }
+HIE
+row ids: [2536]
+HIE
+row ids: [2536, 2537]
+HIE
+row ids: [2536, 2537, 2538]
+HIE
+row ids: [2536, 2537, 2538, 2533]
+HIE
+row ids: [2536, 2537, 2538, 2533, 2534]
+HIE
+row ids: [2536, 2537, 2538, 2533, 2534, 2535]

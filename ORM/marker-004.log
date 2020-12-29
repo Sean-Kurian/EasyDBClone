@@ -1,0 +1,72 @@
+Overriding static starter source code:
+asst3/Makefile
+rustc -A unused_variables -A dead_code -o server main.rs
+warning: unused `std::result::Result` that must be used
+   --> database.rs:273:9
+    |
+273 |         handle_drop(db, i, j);
+    |         ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(unused_must_use)]` on by default
+    = note: this `Result` may be an `Err` variant, which should be handled
+
+warning: 1 warning emitted
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-01-insert.py 
+insert test
+Mark for insert test is 18 out of 18
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-02-update.py 
+update test
+Mark for update test is 17 out of 17
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-03-drop.py 
+drop test
+Mark for drop test is 17 out of 17
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-04-scan.py 
+scan test
+Mark for scan test is 18 out of 18
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-05-stress.py 
+stress test
+Mark for stress test is 10 out of 10
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-06-parallel.py 
+parallel test
+Mark for parallel test is 5 out of 5
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py 
+speedup test
+INFO: Run 1 out of 3
+FAIL: your speedup is 1.358x (below minimum for partial marks
+INFO: Run 2 out of 3
+FAIL: your speedup is 1.332x (below minimum for partial marks
+INFO: Run 3 out of 3
+FAIL: your speedup is 1.448x (below minimum for partial marks
+Mark for speedup test is 0 out of 5
+FAIL
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-08-limit.py 
+limit test
+Case 1: 5th client connecting
+Case 1: PASS. Connection refused.
+Case 2: two clients disconnected, two new clients
+Case 2: PASS.
+Case 3: 5th client connecting
+Case 3: PASS. Connection refused.
+Mark for limit test is 5 out of 5
+PASS
+
+Running: /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-09-synch.py 
+synch test
+Mark for synch test is 5 out of 5
+PASS
+
+You have received 95 marks out of a total of 100 marks.

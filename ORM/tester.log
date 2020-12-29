@@ -1,0 +1,228 @@
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-01-insert.py --------
+
+running test number 1
+PASS: Insert on table 1
+PASS: Insert on table 2
+PASS: Insert on table 1 returned BAD_VALUE
+PASS: Insert on table 1 returned BAD_VALUE
+PASS: Insert on table 1 returned BAD_TABLE
+PASS: Insert on table 1 returned BAD_ROW
+PASS: Insert on table 1 returned BAD_ROW
+PASS: GET on table 1
+PASS: GET on table 1
+PASS: Insert on table 2 returned BAD_FOREIGN
+PASS: Get on table 2 returned NOT_FOUND
+PASS: Get on table 2 returned NOT_FOUND
+PASS: Get on table 69 returned BAD_TABLE
+PASS: Get on table 0 returned BAD_TABLE
+PASS: No duplicate id found during mass insertion
+TOTAL MARKS: 18 of 18
+DONE 18
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-02-update.py --------
+
+running test number 2
+PASS: UPDATE on table 1
+PASS: GET after UPDATE on table 1
+PASS: GET after UPDATE on table 1
+PASS: GET on table 1
+PASS: GET on table 1
+PASS: UPDATE on table 2
+PASS: GET after UPDATE on table 2
+PASS: UPDATE on table 2 returned BAD_FOREIGN
+PASS: UPDATE on table 1 returned BAD_ROW
+PASS: UPDATE on table 1 returned BAD_VALUE
+PASS: UPDATE on table 1 returned TXN_ABORT
+PASS: UPDATE on table 1 with version = 0
+PASS: UPDATE on table 1 returned NOT_FOUND
+PASS: GET after UPDATE x1000 on table 2
+TOTAL MARKS: 17 of 17
+DONE 17
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-03-drop.py --------
+
+running test number 3
+PASS: Drop on table 0 returned BAD_TABLE
+PASS: Drop on User 1
+PASS: Drop on Account 1
+PASS: Account 2 is there
+PASS: Cascade drop on Account 2
+PASS: Drop on Student 2
+PASS: Cascade drop on Assignment 2
+PASS: Assignment 1 is there
+PASS: Cascade drop on Student 1
+PASS: Cascade drop on Assignment 1 
+INFO: dropped User 25
+INFO: cascade dropped 7 accounts
+INFO: cascade dropped 49 debts
+INFO: dropped User 30
+INFO: cascade dropped 86 debts
+TOTAL MARKS: 17 of 17
+DONE 17
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-04-scan.py --------
+
+running test number 4
+PASS: SCAN:OP_NE on User 1
+PASS: SCAN:OP_EQ on User 1
+PASS: SCAN returned BAD_QUERY on bad operator
+PASS: SCAN returned BAD_QUERY on unsupported operator for foreign
+PASS: SCAN:OP_EQ on Table 1
+PASS: SCAN:OP_LT on Table 1
+PASS: SCAN:OP_GE on Table 1
+PASS: SCAN:OP_EQ on Table 1
+PASS: SCAN:OP_NE on Table 1
+PASS: SCAN:OP_GT on Table 1
+PASS: SCAN:OP_LE on Table 1
+PASS: SCAN:OP_GE on Table 1
+PASS: SCAN returned BAD_QUERY on column type mismatch
+PASS: SCAN:OP_NE on Table 3
+PASS: SCAN:OP_EQ on Table 3
+PASS: SCAN:OP_AL on Table 3
+PASS: SCAN returned BAD_QUERY when column id is not 0 for OP_AL
+PASS: SCAN returned BAD_TABLE on table_id 0
+TOTAL MARKS: 18 of 18
+DONE 18
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-05-stress.py --------
+
+running test number 5
+EXPECTING: NOT_FOUND or BAD_FOREIGN
+PASS: UPDATE returned code 9
+EXPECTING: NOT_FOUND
+PASS: UPDATE account after cascade delete returned NOT_FOUND
+People greater than 30 years old: 2 4 10 3 12 7 
+Table 1 Row 8: Okq Ltulaios 2.29144 23 
+Table 1 Row 8: Wskkcx Efxazdvlghzu 4.91571 48 
+Does Not Exist: Table 1 Row 3
+People greater than 30 years old: 2 4 10 8 12 7 
+Table 1 Row 13: Jrymmwncnb Imvjcjksdgvdmxx 7.18312 87 
+Table 1 Row 14: Pokdpcs Gdep 2.30629 93 
+Table 1 Row 15: Erk Dsbkfkqedwcecju 2.58078 21 
+Table 1 Row 16: Jporucfuqfartl Gzd 6.62187 19 
+Table 1 Row 17: Idekqbunqt Zuycozizwbhartcgr 6.32493 26 
+Table 1 Row 18: Bf Cylgfcyvvzs 4.65502 89 
+Table 1 Row 19: Lwukjapnbmjc Enjygn 4.39452 95 
+Table 1 Row 20: Mswxuadj Dpzoqyediupkpiewy 3.6766 58 
+Table 1 Row 21: Ojspf Yocbwnsceq 4.86736 34 
+Table 1 Row 22: Rzdsxsmzwc Nhpe 5.93676 46 
+Table 1 Row 23: Xdqyiiwcwxybt Kkrsbqvuwoyzc 4.61215 53 
+Table 1 Row 24: Mceqmql Mrbkvhiaetpo 2.35184 9 
+Table 1 Row 25: Cpm Mksdnaliqkarnyjcmrpo 2.37916 89 
+Table 1 Row 26: Oclsqciguoih Ipxxmxbsnfm 6.96004 63 
+Table 1 Row 27: Xocbwsjn Ltzusruqihlbmtbgkaqsx 6.53387 62 
+Table 1 Row 28: Wieufo Koubidnxgwbtnthqdydcpet 6.85334 65 
+Table 1 Row 29: Eh Yoz 5.06608 94 
+Table 1 Row 30: Kzoxx Aupqwidssjrviweizciidg 7.99846 90 
+Table 1 Row 31: Ewilgcmhnl Cdvdnwnudhzmjpbrmyocek 7.16141 50 
+Table 1 Row 32: Vhagsdmepq Mnkavnehxsjz 7.61076 85 
+Table 1 Row 33: Ciivsis Quxws 2.80671 68 
+Table 1 Row 34: Kp Cmbygnzgnlc 4.04247 17 
+Table 1 Row 35: Ahlmkskoejb Muivfauuoytvi 4.0172 32 
+Table 1 Row 36: Upuqhmoyapzzbm Anrirkeqoxwulwo 3.74176 11 
+Table 1 Row 37: Fpx Jyrgollvtwvpfqhbinutykq 2.42255 37 
+Table 1 Row 38: Acmrj Ylnnh 5.47648 64 
+Table 1 Row 39: Mgovloizbqfmkew Tobkltsp 7.67965 55 
+Table 1 Row 40: Jlpebwhjzy Riyyfxhqddno 3.71645 24 
+Table 1 Row 41: Hsgsuwyfweov Hrdgljyjvdwfihw 5.55416 97 
+Table 1 Row 42: Zfqcflktexqmpu Qwlpdo 6.43756 50 
+Table 1 Row 43: Lcurs Mqpvdggatqewelmdphyi 5.38837 87 
+Table 1 Row 44: Tcvlirpugslntt Eupwhcikhl 7.21211 10 
+Table 1 Row 45: Bqmldqgzqrqt Tousoyleylxixz 3.13206 80 
+Table 1 Row 46: Arnwlbuwiujfd Ejvmskn 4.44267 49 
+Table 1 Row 47: Vdirmnwxtg Fy 3.90947 13 
+Table 1 Row 48: Khc Gvozcmexbyorqhsl 7.45074 39 
+Table 1 Row 49: Rvqje Ufjcrphvchtetakm 7.424 69 
+Table 1 Row 50: Uhtgt Wokt 5.96456 30 
+Table 1 Row 51: Xu Qtxebemmy 3.68653 26 
+Table 1 Row 52: Trcqekmhxowc Odgiwcydoiifush 7.60111 59 
+Table 1 Row 53: Sqzgxyeqfbc Bxefyghdkmywb 6.84701 91 
+Table 1 Row 54: Rlcyvuzvmgu Tlejfqzvfymdehmyb 2.0058 98 
+Table 1 Row 55: Kzgj Ydvcbpcujwdknqholnwusa 3.18448 93 
+Table 1 Row 56: Kwhxue Ursoafgpbzeepygvwhl 4.95306 82 
+Table 1 Row 57: Ktak Xgliwxzufzrxxhrmu 7.35301 34 
+Table 1 Row 58: Myjjvsdho Cndlsajiica 4.86275 93 
+Table 1 Row 59: Enmfxorzkinviat Bm 3.48672 52 
+Table 1 Row 60: Gzpcnq Haftyzxijxmwtxzcoxaxzl 6.62381 87 
+Table 1 Row 61: Pb Gbafaosnijqimiwxbtdv 6.96547 83 
+Table 1 Row 62: Tnzkmc Ofgslazep 2.65437 70 
+People greater than 30 years old: 2 4 10 8 12 7 
+Table 2 Row 2: pk(8) Savings 279.883 
+Table 2 Row 22: pk(63) Savings 319.454 
+Does Not Exist: Table 2 Row 22
+Does Not Exist: Table 2 Row 24
+Does Not Exist: Table 2 Row 26
+Does Not Exist: Table 2 Row 28
+Does Not Exist: Table 2 Row 30
+Does Not Exist: Table 2 Row 32
+Does Not Exist: Table 2 Row 34
+Does Not Exist: Table 2 Row 36
+Does Not Exist: Table 2 Row 38
+Does Not Exist: Table 2 Row 40
+Balances less than 100.0: 15 
+Does Not Exist: Table 2 Row 2
+Does Not Exist: Table 2 Row 3
+Does Not Exist: Table 2 Row 4
+Does Not Exist: Table 2 Row 5
+Does Not Exist: Table 2 Row 6
+Does Not Exist: Table 2 Row 7
+Does Not Exist: Table 2 Row 8
+Does Not Exist: Table 2 Row 9
+Does Not Exist: Table 2 Row 10
+Does Not Exist: Table 2 Row 11
+Does Not Exist: Table 2 Row 12
+Does Not Exist: Table 2 Row 13
+Does Not Exist: Table 2 Row 14
+Does Not Exist: Table 2 Row 15
+Does Not Exist: Table 2 Row 16
+Does Not Exist: Table 2 Row 17
+Does Not Exist: Table 2 Row 18
+Does Not Exist: Table 2 Row 19
+Does Not Exist: Table 2 Row 20
+Does Not Exist: Table 2 Row 21
+Balances less than 100.0: 
+TOTAL MARKS: 10 of 10
+DONE 10
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-06-parallel.py --------
+
+Received 136/500 bribes from politician 0
+Received 165/500 bribes from politician 1
+Received 149/500 bribes from politician 2
+Received 110/500 bribes from politician 3
+Jemin Manufacturing LTD:
+President: Andrew Choi
+Balance: 2926661.000000
+Number of Employees: 42
+DONE 5
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+running test number 7
+INFO: took 2.708266 seconds to complete serial task
+DONE 1
+
+running test number 7b
+INFO: took 2.345241 seconds to complete parallel tasks
+DONE 1
+
+running test number 7
+INFO: took 2.737294 seconds to complete serial task
+DONE 1
+
+running test number 7b
+INFO: took 1.903805 seconds to complete parallel tasks
+DONE 1
+
+running test number 7
+INFO: took 2.759616 seconds to complete serial task
+DONE 1
+
+running test number 7b
+INFO: took 1.992449 seconds to complete parallel tasks
+DONE 1
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-09-synch.py --------
+
+DONE 5
